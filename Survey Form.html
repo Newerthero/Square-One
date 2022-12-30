@@ -1,0 +1,72 @@
+<!DOC. HTML!> 
+<html link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+<style>
+body {
+  margin: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin:  10px;
+}
+
+input {
+  display: inline-flex;
+  margin:  10px;
+}
+
+textarea {
+  display: block;
+  margin: 10px;
+  width: 350px;
+  height: 75px;
+}
+
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+select {
+  margin:  10px;
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 25;
+}
+
+#submit {
+  margin-left: 10px;
+  text-align: center;
+  padding: 5px 152px 5px 152px ;
+}
+</style>
+<body><h1 id="title">Example Survey Form</h1>
+  <p id="description">This form is made as an example for the certification.</p>
+  <form id="survey-form"><span class="bold-text">Survey Form</span>
+<hr class="rounded">
+<label id="name-label">Name: <input id="name" type="text" required placeholder="John Smith"></input></label>
+<label id="email-label">E-mail: <input id="email" type="email" required placeholder="example@mail.com"></input></label>
+<label id="number-label">Number: <input id="number" type="number" min="18" max="40" placeholder="18-40"></input></label>
+<hr class="rounded">
+<select id="dropdown">
+  <option>Gender</option>
+  <option>Male</option>
+  <option>Female</option>
+  <option>Other</option>
+</select>
+<input type="radio" value="1" name="status">Married</input>
+<input type="radio" value="2" name="status">Single</input>
+<input type="radio" value="3" name="status">Divorced</input>
+<br />
+<input type="radio" value="4" name="kids">Have children</input>
+<input type="radio" value="5" name="kids">Don't have children</input>
+<hr class="rounded">
+<textarea>Comments</textarea><body>
+<button id="submit" type="submit">Submit</button></form>
+
+
